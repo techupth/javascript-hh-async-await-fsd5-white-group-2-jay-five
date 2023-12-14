@@ -33,3 +33,26 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+// แบบ function ปกติ
+// async function asyncShowJohn (){
+//   try{
+//   const JohnProfileInfo = await getJohnProfile()
+//   console.log(JohnProfileInfo)
+//   const JohnOrdersInfo = await getJohnOrders()
+//   console.log(JohnOrdersInfo)
+//   }catch(error){
+//     console.log(error)
+//   }
+// }
+// แบบ arrow function
+const asyncShowJohn = async() => {
+  try{
+    const showJohnProfile = await getJohnProfile()
+    console.log(showJohnProfile)
+    const showJohnOrders = await getJohnOrders()
+    console.log(showJohnOrders)
+  }catch (error){
+    console.log(error)
+  }
+}
+asyncShowJohn()

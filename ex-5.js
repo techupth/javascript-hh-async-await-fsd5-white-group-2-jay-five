@@ -12,3 +12,23 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+// แบบ function ปกติ
+// async function asyncShowJohnProfile() {
+//   try {
+//     const JohnProfile = await getJohnProfile();
+//     console.log(JohnProfile);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// แบบ arrow function
+const asyncShowJohnProfile =async () => {
+  try {
+    const JohnProfileInfo = await getJohnProfile()
+    console.log(JohnProfileInfo)
+  }catch (error){
+    console.log(error)
+  }
+
+}
+asyncShowJohnProfile();

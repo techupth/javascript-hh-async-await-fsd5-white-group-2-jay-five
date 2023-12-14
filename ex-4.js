@@ -13,3 +13,14 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+// แบบ  function ปกติ
+// async function asyncShowJohnProfile() {
+//   const JohnProfile = await getJohnProfile();
+//   console.log(JohnProfile);
+// }
+//แบบarrow function 
+const asyncShowJohnProfile = async () => {
+  const JohnProfileInfo = await getJohnProfile()
+  console.log(JohnProfileInfo)
+};
+asyncShowJohnProfile();
